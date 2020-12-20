@@ -11,7 +11,7 @@ module.exports = {
       name: 'products',
       filename: 'remoteEntry.js',
       exposes: {
-        './ProductsIndex': './src/index'
+        './ProductsIndex': './src/bootstrap' // bootstrap is the one exporting the function. Index just call and run bootstrap
       },
       shared: ['faker'],
     }),
